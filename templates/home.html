@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="mt-5" style="border: 3px solid cornflowerblue; border-radius: 10px; background: white; padding-bottom: 12em; padding-top: 3em; padding-left: 3em; padding-right: 3em">
+        <span class="text-primary fw-bold" style="font-size: 300%">Newspaper App</span>
+        <p class="fw-normal text-dark">A Newspaper website built with Django.</p>
+        <a class="btn btn-primary fw-bold mt-4" href="{% url 'article_list' %}" role="button">View All Articles</a>
+    </div>
+{% endblock content %}

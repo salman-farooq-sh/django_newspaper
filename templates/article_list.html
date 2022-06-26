@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Articles{% endblock title %}
+
+{% block content %}
+    <div class="card text-center">
+        <a class="btn btn-primary fs-3 fw-bold fst-italic py-3" href="{% url 'article_create' %}">Create New Article</a>
+    </div>
+    <br/>
+
+    {% for article in article_list %}
+        <div class="card">
+            <div class="card-header">
+                <h2 class="fw-bold">{{ article.title }}</h2>
+                <span class="text-muted">
+                    By {{ article.author.first_name }} {{ article.author.last_name}} | published {{ article.publication_date }}
+                </span>
+            </div>
+            <div class="card-body">
+                <p>{{ article.body|truncatewords:70 }}</p>
+                <a class="btn btn-primary stretched-link" href="{% url 'article_detail' article.pk %}" role="button">Read More</a>
+            </div>
+        </div>
+        <br/>
+    {% endfor %}
+{% endblock content %}
