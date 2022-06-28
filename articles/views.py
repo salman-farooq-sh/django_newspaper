@@ -1,9 +1,17 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.views.generic import DetailView, UpdateView, ListView, CreateView, DeleteView
+from furl import furl
 
 from .forms import ArticleCreateForm, ArticleUpdateForm, CategorySelectForm
 from .models import Article, Comment
+
+
+def add_get_parameter(url, parameter):
+    parameter_name, parameter_value = parameter.split('=', maxsplit=2)
+    f = furl(url)
+    f.args[parameter_name] = parameter_value
+    return f.url
 
 
 class ArticleCreateView(LoginRequiredMixin, CreateView):
@@ -19,22 +27,44 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
 class ArticleListView(ListView):
     model = Article
     template_name = 'article_list.html'
+    paginate_by = 10
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
+
         context['form'] = CategorySelectForm(
             initial={
                 'categories': self.request.GET.getlist('categories'),
             },
         )
+
+        request_url = self.request.get_full_path(force_append_slash=True)
+        page_obj = context['page_obj']
+        context['page_urls'] = {
+            'first': add_get_parameter(
+                request_url, f'page=1'
+            ),
+            'previous': add_get_parameter(
+                request_url, f'page={page_obj.previous_page_number() if page_obj.has_previous() else ""}'
+            ),
+            'next': add_get_parameter(
+                request_url, f'page={page_obj.next_page_number() if page_obj.has_next() else ""}'
+            ),
+            'last': add_get_parameter(
+                request_url, f'page={page_obj.paginator.num_pages}'
+            ),
+        }
+
         return context
 
     def get_queryset(self):
         selected_categories = self.request.GET.getlist('categories')
         if selected_categories:
-            return Article.objects.filter(categories__in=selected_categories).distinct()
+            queryset = Article.objects.filter(categories__in=selected_categories).distinct()
         else:
-            return super().get_queryset()
+            queryset = super().get_queryset()
+
+        return queryset
 
 
 class ArticleDetailView(LoginRequiredMixin, DetailView):

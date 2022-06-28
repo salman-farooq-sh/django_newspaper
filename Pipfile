@@ -13,6 +13,7 @@ dj-database-url = "*"
 psycopg2-binary = "*"
 whitenoise = "*"
 gunicorn = "*"
+furl = "*"
 
 [dev-packages]
 

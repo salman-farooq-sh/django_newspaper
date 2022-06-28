@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
+{#{% load articles %}#}
 
 {% block title %}Articles{% endblock title %}
 
@@ -8,7 +9,6 @@
         <a class="btn btn-primary fs-3 fw-bold fst-italic py-3" href="{% url 'article_create' %}">Create New Article</a>
     </div>
     <br/>
-
 
     <div class="card">
         <div class="card-body">
@@ -20,7 +20,7 @@
     </div>
     <br/>
 
-    {% for article in article_list %}
+    {% for article in page_obj %}
         <div class="card">
             <div class="card-header">
                 <h2 class="fw-bold">{{ article.title }}</h2>
@@ -36,4 +36,29 @@
         </div>
         <br/>
     {% endfor %}
+
+    <div class="pagination d-flex justify-content-center">
+        {% if page_obj.has_previous %}
+            <a href="{{ page_urls.first }}" class="btn btn-primary mx-1">First</a>
+            <a href="{{ page_urls.previous }}" class="btn btn-primary mx-1">Prev</a>
+        {% else %}
+            <a class="disabled btn btn-dark mx-1">First</a>
+            <a class="disabled btn btn-dark mx-1">Prev</a>
+        {% endif %}
+
+        <span class="current d-flex align-items-center mx-2">
+            {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="{{ page_urls.next }}" class="btn btn-primary mx-1">Next</a>
+            <a href="{{ page_urls.last }}" class="btn btn-primary mx-1">Last</a>
+        {% else %}
+            <a class="disabled btn btn-dark mx-1">Next</a>
+            <a class="disabled btn btn-dark mx-1">Last</a>
+        {% endif %}
+    </div>
+    <br/>
+    <br/>
+    <br/>
 {% endblock content %}
