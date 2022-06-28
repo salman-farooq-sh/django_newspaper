@@ -2,12 +2,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.views.generic import DetailView, UpdateView, ListView, CreateView, DeleteView
 
+from .forms import ArticleCreateForm, ArticleUpdateForm
 from .models import Article, Comment
 
 
 class ArticleCreateView(LoginRequiredMixin, CreateView):
     model = Article
-    fields = ['title', 'body']
+    form_class = ArticleCreateForm
     template_name = 'article_create.html'
 
     def form_valid(self, form):
@@ -16,10 +17,8 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
 
 
 class ArticleListView(ListView):
+    model = Article
     template_name = 'article_list.html'
-
-    def get_queryset(self):
-        return Article.objects.order_by('-publication_date')
 
 
 class ArticleDetailView(LoginRequiredMixin, DetailView):
@@ -34,7 +33,7 @@ class UserIsAuthorMixin(UserPassesTestMixin):
 
 class ArticleUpdateView(LoginRequiredMixin, UserIsAuthorMixin, UpdateView):
     model = Article
-    fields = ['title', 'body']
+    form_class = ArticleUpdateForm
     template_name = 'article_update.html'
 
 

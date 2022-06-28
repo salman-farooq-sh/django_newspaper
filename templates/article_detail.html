@@ -7,7 +7,8 @@
         <div class="card-header">
             <h2 class="fw-bold">{{ article.title }}</h2>
             <span class="text-muted">
-                By {{ article.author.first_name }} {{ article.author.last_name}} | published {{ article.publication_date }}
+                By: {{ article.author.first_name }} {{ article.author.last_name}} | Published: {{ article.publication_date }} |
+                Categories: {% for category in article.categories.all %} {{ category.name }} {% endfor %}
             </span>
         </div>
         <div class="card-body">

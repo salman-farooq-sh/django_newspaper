@@ -7,10 +7,25 @@ from django.urls import reverse
 from django.utils.timezone import now
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=63)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        # TODO: update this to show the list of only the matching articles instead of all articles
+        return reverse('article_list')
+
+
 class Article(models.Model):
+    class Meta:
+        ordering = ['-publication_date']
+
     title = models.CharField(max_length=255)
     body = models.TextField()
     publication_date = models.DateTimeField(auto_now_add=True)
+    categories = models.ManyToManyField(to=Category)
     author = models.ForeignKey(
         to=get_user_model(),
         on_delete=models.SET_NULL,
