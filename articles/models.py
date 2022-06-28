@@ -14,8 +14,7 @@ class Category(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        # TODO: update this to show the list of only the matching articles instead of all articles
-        return reverse('article_list')
+        return f'{reverse("article_list")}?categories={self.id}'
 
 
 class Article(models.Model):

@@ -2,7 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.views.generic import DetailView, UpdateView, ListView, CreateView, DeleteView
 
-from .forms import ArticleCreateForm, ArticleUpdateForm
+from .forms import ArticleCreateForm, ArticleUpdateForm, CategorySelectForm
 from .models import Article, Comment
 
 
@@ -19,6 +19,22 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
 class ArticleListView(ListView):
     model = Article
     template_name = 'article_list.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context['form'] = CategorySelectForm(
+            initial={
+                'categories': self.request.GET.getlist('categories'),
+            },
+        )
+        return context
+
+    def get_queryset(self):
+        selected_categories = self.request.GET.getlist('categories')
+        if selected_categories:
+            return Article.objects.filter(categories__in=selected_categories).distinct()
+        else:
+            return super().get_queryset()
 
 
 class ArticleDetailView(LoginRequiredMixin, DetailView):

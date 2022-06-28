@@ -15,3 +15,11 @@ class ArticleCreateForm(forms.ModelForm):
 
 
 ArticleUpdateForm = ArticleCreateForm  # create a separate form later if needed
+
+
+class CategorySelectForm(forms.Form):
+    categories = forms.ModelMultipleChoiceField(
+        required=False,
+        queryset=Category.objects.all(),
+        widget=forms.CheckboxSelectMultiple,
+    )

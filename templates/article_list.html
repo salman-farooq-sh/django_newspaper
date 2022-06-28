@@ -1,10 +1,22 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %}Articles{% endblock title %}
 
 {% block content %}
     <div class="card text-center">
         <a class="btn btn-primary fs-3 fw-bold fst-italic py-3" href="{% url 'article_create' %}">Create New Article</a>
+    </div>
+    <br/>
+
+
+    <div class="card">
+        <div class="card-body">
+            <form method="get">
+                {{ form|crispy }}
+                <button type="submit" class="btn btn-primary">Apply</button>
+            </form>
+        </div>
     </div>
     <br/>
 

@@ -286,6 +286,188 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2022-06-28T10:44:24.009Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Entertainment",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2022-06-28T10:44:49.597Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Technology",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2022-06-28T10:45:21.002Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Breaking",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2022-06-28T10:45:43.128Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Hollywood",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2022-06-28T10:46:43.635Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "fadsfas",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2022-06-28T10:47:05.241Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "The evolution of sense is the evolution of nonsense",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Categories\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2022-06-28T10:55:06.150Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "When nothing goes right, go left",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Categories\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2022-06-28T10:58:47.690Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "The evolution of sense is the evolution of nonsense",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Categories\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2022-06-28T10:59:15.973Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "One man's nonsense is another man's sense",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Categories\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2022-06-28T10:59:26.643Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "When nothing goes right, go left",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Categories\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2022-06-28T11:00:00.744Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "When nothing goes right, go left",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Categories\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2022-06-28T11:00:19.047Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "3",
+        "object_repr": "salman3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2022-06-28T11:01:00.832Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "The evolution of sense is the evolution of nonsense",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Categories\"]}}, {\"deleted\": {\"name\": \"comment\", \"object\": \"Dummy comment\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2022-06-28T11:01:29.378Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "The evolution of sense is the evolution of nonsense",
+        "action_flag": 2,
+        "change_message": "[{\"deleted\": {\"name\": \"comment\", \"object\": \"Another comment whatever anything\"}}]"
+    }
+},
+{
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -574,6 +756,42 @@
     }
 },
 {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add category",
+        "content_type": 9,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change category",
+        "content_type": 9,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": 9,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view category",
+        "content_type": 9,
+        "codename": "view_category"
+    }
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
@@ -638,11 +856,27 @@
     }
 },
 {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "articles",
+        "model": "category"
+    }
+},
+{
     "model": "sessions.session",
     "pk": "mbr7p2bgm7i12u8vspananybyegbxaz6",
     "fields": {
         "session_data": ".eJxVjDsOwyAQBe9CHSF-JpAyfc6AlmUJTiKQjF1FvrttyUXSvpk3XxZgmUtYOk1hTOzGFLv8bhHwTfUA6QX12Ti2Ok9j5IfCT9r5oyX63E_3L1Cgl_2NBodEnpwWDiQ5IwR6nZWifDXSCk8S5J4ja10msKgygLOD91pESsjWDfE0OJU:1o5Q4b:hXU7yw0OWfsNOTd_Ock2E1Wn2YS2z-ocWZ40FKPKKJw",
         "expire_date": "2022-07-10T11:05:01.054Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ytoalyctlgd1lwazrz14roo5r0f2qi77",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHlDS7d-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2ZkJdvrdENKD2g7yHdqt89TbuszId4UfdPBrz_S8HO7fQYVRvzUYkog-laSzNJMwLqigJwhGAeYinbHoFBUCbbVI3spgoJC0vljK6Nj7A-2uOEE:1o6Dx6:V5JQ2H5U-0PPFK8e2b87Cq6hSpNY3eBJXh5x-59VLdA",
+        "expire_date": "2022-07-12T16:20:36.817Z"
     }
 },
 {
@@ -658,7 +892,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$320000$0i2EmxYh2SDtW5hnbCnPI6$zoca07yr8bvwuMlOEzCwrUlQ28d/Hxecwv6cGYZlp3I=",
-        "last_login": "2022-06-25T17:56:12.350Z",
+        "last_login": "2022-06-28T16:20:36.802Z",
         "is_superuser": true,
         "username": "salman",
         "first_name": "Salman",
@@ -677,7 +911,7 @@
     "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$320000$UIejgrqIrkb1WqccjGJrdq$RjD7pWyyDfO6TEDImSHh+j6OvNxuwewfSPRhl0mp0hM=",
-        "last_login": "2022-06-26T11:05:01.039Z",
+        "last_login": "2022-06-28T11:37:14.954Z",
         "is_superuser": false,
         "username": "salman2",
         "first_name": "John",
@@ -687,25 +921,6 @@
         "is_active": true,
         "date_joined": "2022-06-18T12:42:51Z",
         "age": 3,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "accounts.customuser",
-    "pk": 3,
-    "fields": {
-        "password": "pbkdf2_sha256$320000$xyPDcJi1Hw589g1j8sdbTx$vv88L9BjNtNvgXM0qdOipfdnrb0FIhL0BBXhz7bfNKc=",
-        "last_login": "2022-06-18T12:47:33Z",
-        "is_superuser": false,
-        "username": "salman3",
-        "first_name": "Ali",
-        "last_name": "Shaheen",
-        "email": "salman3@farooq.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2022-06-18T12:47:31Z",
-        "age": 5,
         "groups": [],
         "user_permissions": []
     }
@@ -730,13 +945,42 @@
     }
 },
 {
+    "model": "articles.category",
+    "pk": 1,
+    "fields": {
+        "name": "Entertainment"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 2,
+    "fields": {
+        "name": "Technology"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 3,
+    "fields": {
+        "name": "Breaking"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 4,
+    "fields": {
+        "name": "Hollywood"
+    }
+},
+{
     "model": "articles.article",
     "pk": 1,
     "fields": {
         "title": "No Pressure, No Diamonds",
         "body": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.\r\n\r\nNor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?\r\n\r\nOn the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.\r\n\r\nBut in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.\r\n\r\nNo one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our",
         "publication_date": "2022-06-24T15:24:26.712Z",
-        "author": 1
+        "author": 1,
+        "categories": []
     }
 },
 {
@@ -746,7 +990,10 @@
         "title": "When nothing goes right, go left",
         "body": "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.\r\n\r\nThe new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.\r\n\r\nTo achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth.\r\n\r\nFor science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.\r\n\r\nTo an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.\r\n\r\nIf several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem",
         "publication_date": "2022-06-24T15:25:00.292Z",
-        "author": 1
+        "author": 1,
+        "categories": [
+            2
+        ]
     }
 },
 {
@@ -756,7 +1003,12 @@
         "title": "One man's nonsense is another man's sense",
         "body": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.\r\n\r\nEven the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.\r\n\r\nWhen she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.\r\n\r\nThe copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word \"and\" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.\r\n\r\nFar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.\r\n\r\nThe Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.\r\n\r\nOn her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word \"and\" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the storm.",
         "publication_date": "2022-06-24T15:25:56.083Z",
-        "author": 2
+        "author": 2,
+        "categories": [
+            1,
+            3,
+            4
+        ]
     }
 },
 {
@@ -766,25 +1018,12 @@
         "title": "The evolution of sense is the evolution of nonsense",
         "body": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.\r\n\r\nWhen, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God!\r\n\r\nO my friend -- but it is too much for my strength -- I sink under the weight of the splendour of these visions! A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.\r\n\r\nI am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.\r\n\r\nWhen, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God!\r\n\r\nO my friend -- but it is too much for my strength -- I sink under the weight of the splendour of these visions!\r\n\r\nA wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, super.",
         "publication_date": "2022-06-24T15:26:19.953Z",
-        "author": 2
-    }
-},
-{
-    "model": "articles.comment",
-    "pk": 1,
-    "fields": {
-        "comment": "Dummy comment",
-        "article": 4,
-        "author": 3
-    }
-},
-{
-    "model": "articles.comment",
-    "pk": 2,
-    "fields": {
-        "comment": "Another comment whatever anything",
-        "article": 4,
-        "author": 4
+        "author": 2,
+        "categories": [
+            1,
+            2,
+            3
+        ]
     }
 },
 {
