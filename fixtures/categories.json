@@ -1,0 +1,58 @@
+[
+{
+    "model": "articles.category",
+    "pk": 1,
+    "fields": {
+        "name": "Entertainment"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 2,
+    "fields": {
+        "name": "Technology"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 3,
+    "fields": {
+        "name": "Breaking"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 4,
+    "fields": {
+        "name": "Hollywood"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 5,
+    "fields": {
+        "name": "Sports"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 6,
+    "fields": {
+        "name": "Pakistan"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 7,
+    "fields": {
+        "name": "Vehicles"
+    }
+},
+{
+    "model": "articles.category",
+    "pk": 8,
+    "fields": {
+        "name": "Weather"
+    }
+}
+]

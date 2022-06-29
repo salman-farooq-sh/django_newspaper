@@ -14,6 +14,8 @@ psycopg2-binary = "*"
 whitenoise = "*"
 gunicorn = "*"
 furl = "*"
+django-bakery = "*"
+faker = "*"
 
 [dev-packages]
 
