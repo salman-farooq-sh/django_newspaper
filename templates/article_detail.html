@@ -12,7 +12,7 @@
             </span>
         </div>
         <div class="card-body">
-            {{ article.body|linebreaks }}
+            {{ article.body|safe|linebreaks }}
             <div class="mt-4 text-end">
                 <a class="btn btn-info me-1" href="{% url 'article_list' %}" role="button">&lt;- All Articles</a>
                 {% if article.author == user %}

@@ -16,6 +16,8 @@ gunicorn = "*"
 furl = "*"
 django-bakery = "*"
 faker = "*"
+bleach = {extras = ["css"], version = "*"}
+html2text = "*"
 
 [dev-packages]
 

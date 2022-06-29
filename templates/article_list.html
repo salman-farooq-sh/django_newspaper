@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
-{#{% load articles %}#}
+{% load articles %}
 
 {% block title %}Articles{% endblock title %}
 
@@ -30,7 +30,7 @@
                 </span>
             </div>
             <div class="card-body">
-                <p>{{ article.body|truncatewords:70 }}</p>
+                <p>{{ article.body|html_to_text|truncatewords:70 }}</p>
                 <a class="btn btn-primary stretched-link" href="{% url 'article_detail' article.pk %}" role="button">Read More</a>
             </div>
         </div>

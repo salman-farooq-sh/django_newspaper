@@ -12,7 +12,7 @@ from articles.models import Article, Category, Comment
 
 fake = Faker()
 
-for _ in range(50):
+for _ in range(1):
     a = Article(
         title=fake.sentence(nb_words=6)[:-1],
         body=fake.text(max_nb_chars=3000),
