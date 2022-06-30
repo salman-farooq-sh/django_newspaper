@@ -18,6 +18,7 @@ django-bakery = "*"
 faker = "*"
 bleach = {extras = ["css"], version = "*"}
 html2text = "*"
+beautifulsoup4 = "*"
 
 [dev-packages]
 
