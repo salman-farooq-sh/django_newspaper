@@ -27,7 +27,7 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
 class ArticleListView(ListView):
     model = Article
     template_name = 'article_list.html'
-    paginate_by = 10
+    paginate_by = 8
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
@@ -60,11 +60,16 @@ class ArticleListView(ListView):
     def get_queryset(self):
         selected_categories = self.request.GET.getlist('categories')
         if selected_categories:
-            queryset = Article.objects.filter(categories__in=selected_categories).distinct()
+            return Article.objects.filter(categories__in=selected_categories).distinct()
         else:
-            queryset = super().get_queryset()
+            return super().get_queryset()
 
-        return queryset
+
+class MyArticleListView(LoginRequiredMixin, ArticleListView):
+    template_name = 'my_article_list.html'
+
+    def get_queryset(self):
+        return super().get_queryset().filter(author=self.request.user)
 
 
 class ArticleDetailView(LoginRequiredMixin, DetailView):

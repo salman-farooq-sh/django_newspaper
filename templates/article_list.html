@@ -20,22 +20,39 @@
     </div>
     <br/>
 
-    {% for article in page_obj %}
-        <div class="card">
-            <div class="card-header">
-                <h2 class="fw-bold">{{ article.title }}</h2>
-                <span class="text-muted">
-                    By: {{ article.author.first_name }} {{ article.author.last_name}} | Published: {{ article.publication_date }} |
-                    Categories: {% for category in article.categories.all %} {{ category.name }} {% endfor %}
-                </span>
+    <div class="d-flex justify-content-center">
+        {% block which_list %}
+            <a class="disabled btn btn-dark mx-2">All Articles</a>
+            {% if user.is_authenticated %}
+                <a class="btn btn-primary mx-2" href="{% url 'my_article_list' %}">My Articles</a>
+            {% endif %}
+        {% endblock which_list %}
+    </div>
+    <br/>
+
+    {% if page_obj %}
+        {% for article in page_obj %}
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="fw-bold">{{ article.title }}</h2>
+                    <span class="text-muted">
+                        By: {{ article.author.first_name }} {{ article.author.last_name}} | Published: {{ article.publication_date }} |
+                        Categories: {% for category in article.categories.all %} {{ category.name }} {% endfor %}
+                    </span>
+                </div>
+                <div class="card-body">
+                    <p>{{ article.body|html_to_text|truncatewords:70 }}</p>
+                    <a class="btn btn-primary stretched-link" href="{% url 'article_detail' article.pk %}" role="button">Read More</a>
+                </div>
             </div>
-            <div class="card-body">
-                <p>{{ article.body|html_to_text|truncatewords:70 }}</p>
-                <a class="btn btn-primary stretched-link" href="{% url 'article_detail' article.pk %}" role="button">Read More</a>
-            </div>
+            <br/>
+        {% endfor %}
+    {% else %}
+        <div class="d-flex justify-content-center my-3">
+            No articles yet. Create a new one using the button at the top.
         </div>
         <br/>
-    {% endfor %}
+    {% endif %}
 
     <div class="pagination d-flex justify-content-center">
         {% if page_obj.has_previous %}

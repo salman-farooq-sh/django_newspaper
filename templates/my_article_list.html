@@ -1,0 +1,6 @@
+{% extends 'article_list.html' %}
+
+{% block which_list %}
+    <a class="btn btn-primary mx-2" href="{% url 'article_list' %}">All Articles</a>
+    <a class="disabled btn btn-dark mx-2">My Articles</a>
+{% endblock which_list %}
